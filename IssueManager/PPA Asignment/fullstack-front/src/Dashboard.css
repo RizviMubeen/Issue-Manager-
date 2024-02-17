@@ -1,0 +1,57 @@
+/* Add this to your Dashboard.css file */
+#counter {
+    background-color: #00ff2a;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0; /* Adjust padding as needed */
+}
+
+#counter .count {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+#counter .count.hovered {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+#counter .count.clicked {
+    background-color: #f0f0f0; /* Add a background color or any other styles on click */
+    color: #333; /* Change text color on click */
+}
+
+.count h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+#counter .count .fa {
+    font-size: 40px;
+    display: block;
+    color: #fff;
+}
+
+#counter .number {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Updated styles for centering the widget */
+.widget-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
+}
+
